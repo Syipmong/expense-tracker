@@ -1,5 +1,45 @@
-# expense-tracker
-This is an open source project
+# Expense Tracker
+
+This is an open source project for tracking expenses.
+
+## Contributing
+
+We welcome contributions to this project! Here are some ways you can get involved:
+
+- **Report bugs or suggest improvements:** If you find a bug or have an idea for how to improve the project, please create an issue on GitHub.
+- **Fix bugs:** We are always looking for help fixing bugs. If you see an issue you can fix, please fork the repository, make your changes, and submit a pull request.
+- **Add new features:** We are also open to new features. If you have an idea for a new feature, please create an issue on GitHub and discuss it with the team.
+
+## Getting Started
+
+To get started contributing to this project, you will need to clone the repository and install the dependencies.
+
+```bash
+git clone https://github.com/Syipmong/expense-tracker
+cd expense-tracker
+yarn install
+```
+Use code with caution. [Learn more.]('RADME.md')
+
+Once you have installed the dependencies, you can start making changes to the code.
+
+## Submitting Pull Requests
+
+Once you have made your changes, please commit them to your local repository and submit a pull request.
+
+Here are some guidelines for submitting pull requests:
+
+- Make sure your changes are well-formatted and documented.
+- Test your changes thoroughly before submitting your pull request.
+- Squash your commits into a single commit before submitting your pull request.
+- Include a clear and concise description of your changes in the pull request description.
+
+We will review your pull request and provide feedback as soon as possible.
+
+## License
+
+This project is licensed under the MIT License.
+
 
 # A tree-like visual structure of the app components
 
