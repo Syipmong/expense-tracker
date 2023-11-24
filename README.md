@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# expense-tracker
+This is an open source project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# A tree-like visual structure of the app components
 
-## Available Scripts
+src/
+├── components/
+│   ├── Authentication.js
+│   ├── Categories.js
+│   ├── Charts.js
+│   ├── Dashboard.js
+│   ├── ExpenseForm.js
+│   ├── ExpenseList.js
+│   ├── Filters.js
+│   ├── Navbar.js
+│   └── Settings.js
+├── App.js
+└── index.js
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+src/
+├── components/
+│   ├── Authentication.js
+│   │   ├── This component handles user authentication.
+│   │   ├── It includes a login form and a signup form.
+│   │   ├── It uses React hooks to manage state and side effects.
+│   │   └── It utilizes the Context API for state management.
+│   ├── Categories.js
+│   │   ├── This component allows users to manage expense categories.
+│   │   ├── It includes a form to add new categories and a list to display existing categories.
+│   │   ├── It uses React hooks to manage state and side effects.
+│   │   └── It utilizes the Context API for state management.
+│   ├── Charts.js
+│   │   ├── This component displays expense charts using the Chart.js library.
+│   │   ├── It includes a pie chart and a bar chart.
+│   │   ├── It uses React hooks to manage state and side effects.
+│   │   └── It utilizes the Context API for state management.
+│   ├── Dashboard.js
+│   │   ├── This component serves as the main dashboard for the application.
+│   │   ├── It includes the navigation bar, expense list, and expense charts.
+│   │   ├── It uses React hooks to manage state and side effects.
+│   │   └── It utilizes the Context API for state management.
+│   ├── ExpenseForm.js
+│   │   ├── This component allows users to add new expenses.
+│   │   ├── It includes a form to add new expenses and a list to display
+│   │   │   existing expenses.
+│   │   ├── It uses React hooks to manage state and side effects.
+│   │   └── It utilizes the Context API for state management.
+│   ├── ExpenseList.js
+│   │   ├── This component displays a list of expenses.
+│   │   ├── It includes a search bar and a filter bar.
+│   │   ├── It uses React hooks to manage state and side effects.
+│   │   └── It utilizes the Context API for state management.
+│   ├── Filters.js
+│   │   ├── This component allows users to filter expenses.
+│   │   ├── It includes a form to add new filters and a list to display existing filters.
+│   │   ├── It uses React hooks to manage state and side effects.
+│   │   └── It utilizes the Context API for state management.
+│   ├── Navbar.js
+│   │   ├── This component serves as the navigation bar for the application.
+│   │   ├── It includes a logo, a search bar, and a filter bar.
+│   │   ├── It uses React hooks to manage state and side effects.
+│   │   └── It utilizes the Context API for state management.
+│   ├── Settings.js
+│   │   ├── This component allows users to change their settings.
+│   │   ├── It includes a form to change settings and a list to display existing settings.
+│   │   ├── It uses React hooks to manage state and side effects.
+│   │   └── It utilizes the Context API for state management.
+│   └── Transactions.js
+│       ├── This component allows users to add new transactions.
+│       ├── It includes a form to add new transactions and a list to display existing transactions.
+│       ├── It uses React hooks to manage state and side effects.
+│       └── It utilizes the Context API for state management.
+├── package.json
+├── README.md
+├── src
+│   ├── App.css
+│   ├── App.js
+│   ├── index.js
+│   └── serviceWorker.js
+├── tests
+│   └── test.js
+└── yarn.lock
