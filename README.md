@@ -2,6 +2,9 @@
 
 This is an open source project for tracking expenses.
 
+
+[![Node.js CI](https://github.com/Syipmong/expense-tracker/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/Syipmong/expense-tracker/actions/workflows/node.js.yml)
+
 ## Contributing
 
 We welcome contributions to this project! Here are some ways you can get involved:
