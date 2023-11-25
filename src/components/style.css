@@ -1,38 +1,104 @@
-:root{
-    --primary-color: #3498db;
-  --secondary-color: #2ecc71;
-  --accent-color: #e74c3c;
-  --background-color: #ecf0f1;
-  --text-color: #333;
-}
-
-/* src/components/Navbar.css */
-
+:root {
+    --primary-color: #3498db; /* Main color for the app */
+    --secondary-color: #2ecc71; /* Secondary color, e.g., for buttons or accents */
+    --background-color: #ecf0f1; /* Background color for the entire app */
+    --text-color: #333; /* Main text color */
+    --accent-color: #e74c3c; /* Accent color for alerts or important information */
+    --success-color: #27ae60; /* Success color, e.g., for successful actions */
+    --warning-color: #f39c12; /* Warning color, e.g., for alerts or caution */
+    --info-color: #3498db; /* Information color, e.g., for informational messages */
+    --border-color: #bdc3c7; /* Border color for separating elements */
+  }
+  
+  body {
+    margin: 0;
+  }
+  
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: var(--primary-color); /* Use color variables */
+    background-color: var(--primary-color);
     color: white;
-  }
-  
-  .logo {
+}
+
+.logo {
     font-size: 1.5rem;
     font-weight: bold;
-  }
-  
-  .nav-links {
+}
+
+.nav-links {
     list-style: none;
     display: flex;
-  }
-  
-  .nav-links li {
+}
+
+.nav-links li {
     margin-right: 1rem;
-  }
-  
-  .nav-links a {
+}
+
+.nav-links a {
     text-decoration: none;
     color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: var(--secondary-color);
+}
+
+.buttons {
+    display: flex;
+}
+
+.primary-button,
+.secondary-button {
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.primary-button {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.secondary-button {
+    background-color: transparent;
+    color: white;
+}
+
+.primary-button:hover,
+.secondary-button:hover {
+    background-color: var(--accent-color);
+}
+/* Updated CSS with Media Query for Small Screens */
+@media screen and (max-width: 600px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      margin-top: 1rem;
+    }
+  
+    .nav-links li {
+      margin-right: 0;
+      margin-bottom: 0.5rem;
+    }
+  
+    .logo {
+      margin-bottom: 1rem;
+    }
+  
+    button {
+      margin-top: 1rem;
+    }
   }
   
