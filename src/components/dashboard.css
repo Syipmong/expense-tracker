@@ -1,0 +1,118 @@
+.dashboard {
+  padding: 20px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.overview {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.overview div {
+  margin-right: 10px;
+}
+
+.total-expenses,
+.monthly-expenses,
+.expense-trends {
+  flex: 1;
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.total-expenses:hover,
+.monthly-expenses:hover,
+.expense-trends:hover {
+  border: 2px solid var(--primary-color);
+}
+
+.expense-categories {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.expense-categories div {
+  margin-left: 10px;
+}
+
+.category-breakdown,
+.top-categories {
+  flex: 1;
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.total-expenses:hover,
+.monthly-expenses:hover,
+.expense-trends:hover {
+  background-color: #f1f1f1;
+  transition: background-color 0.3s ease;
+}
+
+.total-expenses:active,
+.monthly-expenses:active,
+.expense-trends:active {
+  background-color: #dcdcdc; 
+}
+
+.category-breakdown:hover,
+.top-categories:hover {
+  background-color: #f1f1f1;
+  transition: background-color 0.3s ease;
+}
+
+.category-breakdown:active,
+.top-categories:active {
+  background-color: #dcdcdc; 
+}
+
+.category-breakdown:hover,
+.top-categories:hover {
+  border: 2px solid var(--secondary-color);
+}
+
+.recent-transactions {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.budget-progress {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.quick-actions {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 10px;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2c3e50;
+}
+
+button:active {
+  background-color: #1d2939;
+}

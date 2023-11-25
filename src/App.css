@@ -1,3 +1,7 @@
 h1{
   color: var(--success-color);
 }
+
+body{
+  user-select: none;
+}
