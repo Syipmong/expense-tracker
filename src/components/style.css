@@ -9,6 +9,9 @@
     --info-color: #3498db; /* Information color, e.g., for informational messages */
     --border-color: #bdc3c7; /* Border color for separating elements */
   }
+
+  @import '~@fortawesome/fontawesome-free/css/all.css';
+
   
   body {
     margin: 0;
@@ -71,12 +74,29 @@
 .secondary-button {
     background-color: transparent;
     color: white;
+    
 }
 
 .primary-button:hover,
 .secondary-button:hover {
     background-color: var(--accent-color);
 }
+
+
+.footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+}
+
 /* Updated CSS with Media Query for Small Screens */
 @media screen and (max-width: 600px) {
     .navbar {
@@ -99,6 +119,11 @@
   
     button {
       margin-top: 1rem;
+    }
+    .secondary-button{
+        position:relative;
+    left: 230px;
+    top:-130px;
     }
   }
   
