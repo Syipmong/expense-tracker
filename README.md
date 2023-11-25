@@ -39,29 +39,6 @@ Here are some guidelines for submitting pull requests:
 
 We will review your pull request and provide feedback as soon as possible.
 
-## License
-
-This project is licensed under the MIT License.
-
-
-# A tree-like visual structure of the app components
-
-```
-src/
-├── components/
-│   ├── Authentication.js
-│   ├── Categories.js
-│   ├── Charts.js
-│   ├── Dashboard.js
-│   ├── ExpenseForm.js
-│   ├── ExpenseList.js
-│   ├── Filters.js
-│   ├── Navbar.js
-│   └── Settings.js
-├── App.js
-└── index.js
-
-```
 
 ## Component Descriptions
 
@@ -128,4 +105,27 @@ src/
 
 ## Project Structure
 
+### A tree-like visual structure of the app components
 
+```
+src/
+├── components/
+│   ├── Authentication.js
+│   ├── Categories.js
+│   ├── Charts.js
+│   ├── Dashboard.js
+│   ├── ExpenseForm.js
+│   ├── ExpenseList.js
+│   ├── Filters.js
+│   ├── Navbar.js
+│   └── Settings.js
+├── App.js
+└── index.js
+
+```
+
+
+
+## License
+
+This project is licensed under the MIT License.
