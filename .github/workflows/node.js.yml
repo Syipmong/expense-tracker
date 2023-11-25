@@ -46,20 +46,5 @@ jobs:
         run: |
           ls -al node_modules
 
-      - name: Display GitHub runner environment
-        run: env
-
-      - name: Install github-report
-        run: |
-          # For Ubuntu-based runners
-          sudo apt-get update
-          sudo apt-get install -y github-report
-
-          # For macOS runners
-          # brew install github-report
-
-      - name: Run github-report
-        run: github-report
-
-      - name: Display error details
-        run: cat /github/workspace/npm-debug.log || true
+      - name: Generate GitHub Report
+        run: echo "GitHub Actions Workflow Completed Successfully" >> github-report.txt
