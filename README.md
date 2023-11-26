@@ -1,5 +1,7 @@
 [![Node.js CI](https://github.com/Syipmong/expense-tracker/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/Syipmong/expense-tracker/actions/workflows/node.js.yml)
 
+[![CodeQL](https://github.com/Syipmong/expense-tracker/actions/workflows/codeql.yml/badge.svg)](https://github.com/Syipmong/expense-tracker/actions/workflows/codeql.yml)
+
 
 # Expense Tracker
 

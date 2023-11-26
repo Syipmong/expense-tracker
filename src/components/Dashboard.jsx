@@ -74,7 +74,7 @@ const Dashboard = () => {
       <section className="expense-categories">
         <div className="category-breakdown">
           <h3>Expense Breakdown</h3>
-          <ExpenseBreakdownPieChart data={expenseData} colors={['#FF5733', '#33FF57', '#5733FF']} />
+          <ExpenseBreakdownPieChart data={expenseData} colors={['#FF5733', '#33FF57', '#5733FF',"#8884d8",'#e3f2fd','#ccebff']}  />
           
         </div>
         <div className="top-categories">
