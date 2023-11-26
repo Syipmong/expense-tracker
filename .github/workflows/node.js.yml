@@ -48,3 +48,10 @@ jobs:
 
       - name: Generate GitHub Report
         run: echo "GitHub Actions Workflow Completed Successfully" >> github-report.txt
+      - name: Deploy to Firebase Hosting
+        run: |
+          npm install -g firebase-tools
+          firebase deploy --token "$FIREBASE_TOKEN"
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+      
