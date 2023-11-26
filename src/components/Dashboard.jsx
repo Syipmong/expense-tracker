@@ -65,7 +65,7 @@ const Dashboard = () => {
         </div>
         <div className="expense-trends">
           <h3>Expense Trends</h3>
-          <h4>Unavailable at the moment But watch out for the release</h4>
+          <h4>Unavailable at the moment</h4>
           {/* <ExpenseTrendsLineChart data={expenseTrendsData} color="#3498db" /> */}
         </div>
       </section>
