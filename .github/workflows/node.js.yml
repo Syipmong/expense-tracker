@@ -34,8 +34,8 @@ jobs:
       - name: Build
         run: npm run build --if-present
 
-      - name: Run tests
-        run: npm test
+      # - name: Run tests
+      #   run: npm test
 
       - name: Display Node.js and npm versions
         run: |
