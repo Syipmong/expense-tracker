@@ -1,7 +1,7 @@
 import ExpenseBreakdownPieChart from './ExpenseBreakdownPieChart';
 import TopSpendingBarChart from './TopSpendingBarChart';
 import './dashboard.css';
-import React from 'react';
+import React, {useState} from 'react';
 // import React, { useState } from 'react';
 // import RecentTransactions from './RecentTransactions';
 // import sampleTransactions from './sampletransaction';
@@ -9,7 +9,8 @@ import QuickActions from './QuickActions';
 import ExpenseList from './ExpenseList';
 import Categories from './Categories';
 import BudgetProgress from './BudgetProgress';
-import Filters from './Filters';
+// import Filters from './Filters';
+import ExpenseForm from './ExpenseForm';
 import ExpenseTrendsLineChart from './ExpenseTrendsLineChart';
 
 // import ExpenseForm from './ExpenseForm';
@@ -20,6 +21,12 @@ const budgetProgressData = {
   spent: 600,
 };
 const Dashboard = () => {
+
+  const [isAddExpenseFormVisible, setAddExpenseFormVisible] = useState(false);
+
+  const toggleAddExpenseForm = () => {
+    setAddExpenseFormVisible(!isAddExpenseFormVisible);
+  };
   // const [expenses, setExpenses] = useState([]);
   // const handleAddExpense = (newExpense) => {
   //   // Update the expenses state with the new expense
@@ -58,13 +65,19 @@ const Dashboard = () => {
     { name: 'Transportation', amount: 25.0 },
     { name: 'Utilities', amount: 30.0 },
     { name: 'Dining out', amount: 40.0 },
-    // Add more expenses as needed
+    { name: 'Miscellaneous', amount: 30.0 }
   ];
+
+ 
+  
   
  
 
 
   return (
+
+    
+
     <div className="dashboard">
       {/* Overview Section */}
       <section className="categories">
@@ -93,8 +106,12 @@ const Dashboard = () => {
       </section>
       {/* Quick Actions Section */}
       <section className="quick-actions">
-        <QuickActions />
+        <QuickActions  toggleAddExpenseForm={toggleAddExpenseForm}/>
       </section>
+
+      {isAddExpenseFormVisible && <ExpenseForm onClose={toggleAddExpenseForm} />}
+    
+
     </div>
   );
 };
