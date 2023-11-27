@@ -3,9 +3,15 @@ import TopSpendingBarChart from './TopSpendingBarChart';
 import './dashboard.css';
 import React from 'react';
 // import React, { useState } from 'react';
-import RecentTransactions from './RecentTransactions';
-import sampleTransactions from './sampletransaction';
-// import ExpenseTrendsLineChart from './ExpenseTrendsLineChart';
+// import RecentTransactions from './RecentTransactions';
+// import sampleTransactions from './sampletransaction';
+import QuickActions from './QuickActions';
+import ExpenseList from './ExpenseList';
+import Categories from './Categories';
+import BudgetProgress from './BudgetProgress';
+import Filters from './Filters';
+import ExpenseTrendsLineChart from './ExpenseTrendsLineChart';
+
 // import ExpenseForm from './ExpenseForm';
 
 
@@ -19,13 +25,13 @@ const Dashboard = () => {
   //   // Update the expenses state with the new expense
   //   setExpenses([...expenses, newExpense]);
   // };
-  const progressPercentage = (budgetProgressData.spent / budgetProgressData.totalBudget) * 100;
-  // const expenseTrendsData = [
-  //   { month: 'Jan', amount: 40 },
-  //   { month: 'Feb', amount: 80 },
-  //   { month: 'Mar', amount: 100 },
-  //   { month: 'Apr', amount: 56 },
-  // ];
+ // const progressPercentage = (budgetProgressData.spent / budgetProgressData.totalBudget) * 100;
+  const expenseTrendsData = [
+    { month: 'Jan', amount: 40 },
+    { month: 'Feb', amount: 80 },
+    { month: 'Mar', amount: 100 },
+    { month: 'Apr', amount: 56 },
+  ];
 
   const topSpendingData = [
     { category: 'Electronics', amount: 800, color: '#FF5733' },
@@ -47,71 +53,50 @@ const Dashboard = () => {
     {name: 'Others', value: 100, color: '#ccebff'}
   ];
 
+  const expenses = [
+    { name: 'Groceries', amount: 50.0 },
+    { name: 'Transportation', amount: 25.0 },
+    { name: 'Utilities', amount: 30.0 },
+    { name: 'Dining out', amount: 40.0 },
+    // Add more expenses as needed
+  ];
   
  
 
 
   return (
     <div className="dashboard">
-      
-      <section className="overview">
-        <div className="total-expenses">
-          <h3>Total Expenses</h3>
-          <p>$1,200.00</p>
-        </div>
-        <div className="monthly-expenses">
-          <h3>Monthly Expenses</h3>
-          <p>$600.00</p>
-        </div>
-        <div className="expense-trends">
-          <h3>Expense Trends</h3>
-          <h4>Unavailable at the moment</h4>
-          {/* <ExpenseTrendsLineChart data={expenseTrendsData} color="#3498db" /> */}
-        </div>
+      {/* Overview Section */}
+      <section className="categories">
+        {/* <Filters /> */}
+        <Categories />
       </section>
 
-     
-      <section className="expense-categories">
-        <div className="category-breakdown">
-          <h3>Expense Breakdown</h3>
-          <ExpenseBreakdownPieChart data={expenseData} colors={['#FF5733', '#33FF57', '#5733FF',"#8884d8",'#e3f2fd','#ccebff']}  />
-          
-        </div>
-        <div className="top-categories">
-          <h3>Top Spending Categories</h3>
-          <TopSpendingBarChart data={topSpendingData} colors={['#FF5733', '#5733FF']} />
-          
-        </div>
+      {/* Expense List Section */}
+      <section className="expense-list">
+        <ExpenseList expenses={expenses} />
       </section>
 
-      {/* Recent Transactions */}
-      <section className="recent-transactions">
-        <h2>Recent Transactions</h2>
-        <RecentTransactions transactions={sampleTransactions} />
-        {/* <ExpenseForm onAddExpense={handleAddExpense} />
-        <ul>
-          {expenses.map((expense, index) => (
-            <li key={index}>{expense.name}: ${expense.amount.toFixed(2)}</li>
-          ))}
-        </ul> */}
+      {/* Expense Charts Section */}
+      <section className="expense-charts top-categories">
+        <TopSpendingBarChart data={topSpendingData} colors={['#FF5733', ]}/>
+        <ExpenseBreakdownPieChart data={expenseData}  colors={['#FF5733', '#33FF57', '#5733FF']}/>
+        
       </section>
 
-      
+      {/* Budget Progress Section */}
       <section className="budget-progress">
-        <h2>Budget Progress</h2>
-        <p>Total Budget: ${budgetProgressData.totalBudget}</p>
-        <p>Amount Spent: ${budgetProgressData.spent}</p>
-        <div className="progress-bar">
-          <div className="progress" style={{ width: `${progressPercentage}%` }}></div>
-        </div>
+        <BudgetProgress data={budgetProgressData} />
       </section>
-
+      <section className='expense-trends'>
+        <ExpenseTrendsLineChart data={expenseTrendsData} color={'#ff5733'} />
+      </section>
+      {/* Quick Actions Section */}
       <section className="quick-actions">
-        <button>Add Expense</button>
-        <button>Filter Transactions</button>
+        <QuickActions />
       </section>
     </div>
   );
-}
+};
 
 export default Dashboard;
