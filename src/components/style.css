@@ -12,6 +12,9 @@
 
   @import '~@fortawesome/fontawesome-free/css/all.css';
 
+  * {
+    box-sizing: border-box;
+  }
   
   body {
     margin: 0;
@@ -88,7 +91,7 @@
   color: white;
   text-align: center;
   padding: 1rem;
-  width: 97%;
+  width: 100%;
   bottom: 0;
 }
 
@@ -125,6 +128,9 @@
         position:relative;
     left: 230px;
     top:-130px;
+    }
+    .footer {
+      font-size: 14px;
     }
   }
   
