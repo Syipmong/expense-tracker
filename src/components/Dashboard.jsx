@@ -10,8 +10,9 @@ import ExpenseList from './ExpenseList';
 import Categories from './Categories';
 import BudgetProgress from './BudgetProgress';
 // import Filters from './Filters';
-import ExpenseForm from './ExpenseForm';
+// import ExpenseForm from './ExpenseForm';
 import ExpenseTrendsLineChart from './ExpenseTrendsLineChart';
+import Modal from './Modal';
 
 // import ExpenseForm from './ExpenseForm';
 
@@ -22,11 +23,17 @@ const budgetProgressData = {
 };
 const Dashboard = () => {
 
-  const [isAddExpenseFormVisible, setAddExpenseFormVisible] = useState(false);
+  const [isAddExpenseModalVisible, setAddExpenseModalVisible] = useState(false);
 
-  const toggleAddExpenseForm = () => {
-    setAddExpenseFormVisible(!isAddExpenseFormVisible);
+  const toggleAddExpenseModal = () => {
+    setAddExpenseModalVisible(!isAddExpenseModalVisible);
   };
+
+  // const [isAddExpenseFormVisible, setAddExpenseFormVisible] = useState(false);
+
+  // const toggleAddExpenseForm = () => {
+  //   setAddExpenseFormVisible(!isAddExpenseFormVisible);
+  // };
   // const [expenses, setExpenses] = useState([]);
   // const handleAddExpense = (newExpense) => {
   //   // Update the expenses state with the new expense
@@ -93,7 +100,7 @@ const Dashboard = () => {
       {/* Expense Charts Section */}
       <section className="expense-charts top-categories">
         <TopSpendingBarChart data={topSpendingData} colors={['#FF5733', ]}/>
-        <ExpenseBreakdownPieChart data={expenseData}  colors={['#FF5733', '#33FF57', '#5733FF']}/>
+        <ExpenseBreakdownPieChart data={expenseData}  colors={['#FF5733', '#33FF57', '#5733FF',"#8884d8",'#e3f2fd','#ccebff']}/>
         
       </section>
 
@@ -106,10 +113,12 @@ const Dashboard = () => {
       </section>
       {/* Quick Actions Section */}
       <section className="quick-actions">
-        <QuickActions  toggleAddExpenseForm={toggleAddExpenseForm}/>
+        <QuickActions  onAddExpenseClick={toggleAddExpenseModal}/>
       </section>
 
-      {isAddExpenseFormVisible && <ExpenseForm onClose={toggleAddExpenseForm} />}
+      {isAddExpenseModalVisible && (
+        <Modal onClose={toggleAddExpenseModal} onAddExpense={() => {}} />
+      )}
     
 
     </div>
