@@ -12,7 +12,7 @@ const Navbar = () => {
         <li><a href='#expenselist'><i className='fas fa-dollar-sign'></i>Expenses</a></li>
       </ul>
       <div className="buttons">
-        <button className="primary-button"><i className="fas fa-plus"></i>Add Expense</button>
+        <button className="primary-button" ><i className="fas fa-plus"></i>Add Expense</button>
         <button className="secondary-button"><i className="fas fa-sign-out-alt"></i>Log Out</button>
       </div>
     </nav>

@@ -1,18 +1,19 @@
 import ExpenseBreakdownPieChart from './ExpenseBreakdownPieChart';
 import TopSpendingBarChart from './TopSpendingBarChart';
 import './dashboard.css';
-import React, {useState} from 'react';
+import React from 'react';
 // import React, { useState } from 'react';
 // import RecentTransactions from './RecentTransactions';
 // import sampleTransactions from './sampletransaction';
-import QuickActions from './QuickActions';
+// import QuickActions from './QuickActions';
 import ExpenseList from './ExpenseList';
 import Categories from './Categories';
 import BudgetProgress from './BudgetProgress';
 // import Filters from './Filters';
 // import ExpenseForm from './ExpenseForm';
 import ExpenseTrendsLineChart from './ExpenseTrendsLineChart';
-import Modal from './Modal';
+// import AddExpensePage from './AddExpensePage';
+// import Modal from './Modal';
 
 // import ExpenseForm from './ExpenseForm';
 
@@ -23,11 +24,18 @@ const budgetProgressData = {
 };
 const Dashboard = () => {
 
-  const [isAddExpenseModalVisible, setAddExpenseModalVisible] = useState(false);
+  // const [expenses, setExpenses] = useState([]);
 
-  const toggleAddExpenseModal = () => {
-    setAddExpenseModalVisible(!isAddExpenseModalVisible);
-  };
+  // const handleAddExpense = (newExpense) => {
+  //   // Update the expenses state with the new expense
+  //   setExpenses([...expenses, newExpense]);
+  // };
+
+  // const [isAddExpenseModalVisible, setAddExpenseModalVisible] = useState(false);
+
+  // const toggleAddExpenseModal = () => {
+  //   setAddExpenseModalVisible(!isAddExpenseModalVisible);
+  // };
 
   // const [isAddExpenseFormVisible, setAddExpenseFormVisible] = useState(false);
 
@@ -67,7 +75,7 @@ const Dashboard = () => {
     {name: 'Others', value: 100, color: '#ccebff'}
   ];
 
-  const expenses = [
+   const expenses = [
     { name: 'Groceries', amount: 50.0 },
     { name: 'Transportation', amount: 25.0 },
     { name: 'Utilities', amount: 30.0 },
@@ -113,13 +121,11 @@ const Dashboard = () => {
       </section>
       {/* Quick Actions Section */}
       <section className="quick-actions">
-        <QuickActions  onAddExpenseClick={toggleAddExpenseModal}/>
+        {/* <QuickActions  onAddExpenseClick={toggleAddExpenseModal}/> */}
       </section>
 
-      {isAddExpenseModalVisible && (
-        <Modal onClose={toggleAddExpenseModal} onAddExpense={() => {}} />
-      )}
-    
+      
+      {/* {window.location.pathname === '/add-expense' && <AddExpensePage onAddExpense={handleAddExpense} />} */}
 
     </div>
   );

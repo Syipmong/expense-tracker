@@ -1,4 +1,3 @@
-// BudgetProgress.js
 import React from 'react';
 
 const BudgetProgress = ({ totalBudget, spent }) => {

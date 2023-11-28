@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Categories = () => {
-  // Replace with your actual category data
   const categoryData = [
     { name: 'Food', icon: 'utensils' },
     { name: 'Transportation', icon: 'car' },
