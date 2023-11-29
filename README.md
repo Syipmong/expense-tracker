@@ -5,6 +5,12 @@
 
 This is an open source project for tracking expenses.
 
+## Live Website
+
+Visit the live website [here](https://expense-tracker-static.web.app/).
+
+
+
 ## Contributing
 
 We welcome contributions to this project! Here are some ways you can get involved:
@@ -22,7 +28,7 @@ git clone https://github.com/Syipmong/expense-tracker
 cd expense-tracker
 yarn install
 ```
-Use code with caution. [Learn more.]('RADME.md')
+Use code with caution. [Learn more.]('README.md')
 
 Once you have installed the dependencies, you can start making changes to the code.
 
