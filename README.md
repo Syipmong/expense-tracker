@@ -5,9 +5,9 @@
 
 This is an open source project for tracking expenses.
 
-## Live Website
+## Live Test Website
 
-Visit the live website [here](https://expense-tracker-static.web.app/).
+Visit the live test website [here](https://expense-tracker-static.web.app/).
 
 
 
