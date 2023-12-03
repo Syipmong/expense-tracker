@@ -134,3 +134,11 @@
     }
   }
   
+  @media screen and (max-width: 512px){
+
+    .secondary-button{
+      position: relative;
+      left: 100px;
+    }
+    
+  }
