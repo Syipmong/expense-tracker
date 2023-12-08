@@ -109,12 +109,18 @@
     }
     .nav-links li a{
       margin-left: 0;
+      padding: 20px;
     }
     .buttons{
       position: relative;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: flex-start;
+      margin-left: 0;
      
+    }
+    .secondary-button{
+      margin-left: 0;
+
     }
   
     .nav-links {
@@ -122,15 +128,7 @@
       justify-content: space-between;
      
     }
-    .buttons{
-      position: relative;
-      display: flex;
-      justify-content: flex-start;
-     
-      
-
-
-    }
+    
   
    
   
@@ -138,32 +136,12 @@
       margin-bottom: 1rem;
     }
   
-    /* button {
-      margin-top: 1rem;
-      margin-left: 1rem;
-    } */
-    /* .secondary-button{
-        position:relative;
-    left: 230px;
-    top:-130px;
-    } */
+   
     .footer {
       font-size: 14px;
     }
-    /* .secondary-button{
-      position: relative;
-      right: 20px;
-    } */
+  
   }
   
-
-
-
-    /* body{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    */
     
   
