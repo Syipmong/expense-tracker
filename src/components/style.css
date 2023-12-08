@@ -56,9 +56,7 @@
     background-color: var(--secondary-color);
 }
 
-.buttons {
-    display: flex;
-}
+
 
 .primary-button,
 .secondary-button {
@@ -102,50 +100,70 @@
 
 
 /* Updated CSS with Media Query for Small Screens */
-@media screen and (max-width: 600px) {
-    .navbar {
-      flex-direction: column;
-      align-items: flex-start;
+@media screen and (max-width: 767px) and (min-width: 320px)
+ {
+    
+
+    .nav-links li a span{
+      display: none;
+    }
+    .nav-links li a{
+      margin-left: 0;
+    }
+    .buttons{
+      position: relative;
+      display: flex;
+      justify-content: space-evenly;
+     
     }
   
     .nav-links {
-      margin-top: 1rem;
+      display: flex;
+      justify-content: space-between;
+     
+    }
+    .buttons{
+      position: relative;
+      display: flex;
+      justify-content: flex-start;
+     
+      
+
+
     }
   
-    .nav-links li {
-      margin-right: 0;
-      margin-bottom: 0.5rem;
-    }
+   
   
     .logo {
       margin-bottom: 1rem;
     }
   
-    button {
+    /* button {
       margin-top: 1rem;
       margin-left: 1rem;
-    }
-    .secondary-button{
+    } */
+    /* .secondary-button{
         position:relative;
     left: 230px;
     top:-130px;
-    }
+    } */
     .footer {
       font-size: 14px;
     }
+    /* .secondary-button{
+      position: relative;
+      right: 20px;
+    } */
   }
   
-  @media screen and (max-width: 767px) and(min-device-width:320px) and (max-device-width:480px){
 
 
-    body{
+
+    /* body{
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-    .secondary-button{
-      position: relative;
-      right: 20px;
-    }
+    */
     
-  }
+  
