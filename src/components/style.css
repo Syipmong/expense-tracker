@@ -18,6 +18,7 @@
   
   body {
     margin: 0;
+    padding: 0;
   }
   
 .navbar {
@@ -134,11 +135,17 @@
     }
   }
   
-  @media screen and (max-width: 512px){
+  @media screen and (max-width: 767px) and(min-device-width:320px) and (max-device-width:480px){
 
+
+    body{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     .secondary-button{
       position: relative;
-      left: 100px;
+      right: 20px;
     }
     
   }
