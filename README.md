@@ -113,6 +113,12 @@ We will review your pull request and provide feedback as soon as possible.
 
 ### A tree-like visual structure of the app components
 
+### Note
+```
+Not Necessarily like in the tree structure
+
+```
+
 ```
 src/
 ├── components/
