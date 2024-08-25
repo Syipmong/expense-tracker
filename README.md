@@ -1,5 +1,8 @@
 [![Node.js CI](https://github.com/Syipmong/expense-tracker/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/Syipmong/expense-tracker/actions/workflows/node.js.yml)   [![CodeQL](https://github.com/Syipmong/expense-tracker/actions/workflows/codeql.yml/badge.svg)](https://github.com/Syipmong/expense-tracker/actions/workflows/codeql.yml)
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Syipmong/expense-tracker&type=Timeline)](https://star-history.com/#Syipmong/expense-tracker&Timeline)
 
 # Expense Tracker
 
