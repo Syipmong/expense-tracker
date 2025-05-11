@@ -1,0 +1,12 @@
+vite:
+  - '**/vite.config.*'
+  - '**/*.ts'
+  - '**/*.tsx'
+  - '**/*.jsx'
+  - '**/*.js'
+
+react:
+  - 'src/**/*'
+
+config:
+  - '.github/**/*'
